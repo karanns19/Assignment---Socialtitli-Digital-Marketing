@@ -1,0 +1,63 @@
+// REST API Testing 
+
+POST http://localhost:3001/login 
+Content-Type: application/json
+
+{
+    "email":"karanns.aero19@gmail.com",
+    "password":"ks191099"
+}
+
+###
+
+POST http://localhost:3001/users 
+Content-Type: application/json
+
+{
+    "username":"karanns19@gmail.com",
+    "password":"qwertyuiop"
+}
+
+###
+
+GET http://localhost:3001/users 
+
+###
+
+PUT http://localhost:3001/users/65bbc66cacb872d37ba4cb35
+Content-Type: application/json
+
+{
+    "username":"ks19@gmail.com",
+    "password":"qwerty"
+}
+
+###
+
+DELETE http://localhost:3001/users/65bbc66cacb872d37ba4cb35
+
+###
+
+POST http://localhost:3001/roles 
+Content-Type: application/json
+
+{
+    "title":"Marketing"
+}
+
+###
+
+GET http://localhost:3001/roles 
+
+###
+
+PUT http://localhost:3001/roles/65bc5b22b3c3b58cda6ccb6e
+Content-Type: application/json
+
+{
+    "title":"Marketing Team"
+}
+
+###
+
+DELETE http://localhost:3001/roles/65bc5b22b3c3b58cda6ccb6e
